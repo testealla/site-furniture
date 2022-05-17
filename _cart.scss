@@ -1,0 +1,192 @@
+.top-cart {
+    height: 400px;
+    background-image: url(img/cart.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.heading-big {
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 70px;
+    color: $color-text;
+    padding-top: 126px;
+}
+
+.cart {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    margin-top: 64px;
+
+    &_name_box {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 14px;
+    }
+
+    &_item {
+        border-top: 0.5px solid #CACDD8;
+        padding-bottom: 32px;
+        padding-top: 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    &__form {
+        background: #F7F6F6;
+        border-radius: 20px;
+        height: 556px;
+        grid-column: span 4;
+    }
+
+    &_content {
+        grid-column: span 8;
+    }
+
+    &_info {
+        width: 276px;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    &_left {
+        display: flex;
+        gap: 32px;
+    }
+
+    &_link {
+        color: #000000;
+        padding-right: 30px;
+    }
+
+    &_order {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #000000;
+        justify-content: center;
+        margin-top: 42px;
+        margin-bottom: 35px;
+    }
+
+    &_button {
+        padding-top: 28px;
+        display: flex;
+        gap: 5px;
+    }
+
+    &_button_text {
+        padding-left: 45px;
+    }
+}
+
+.product_cart_content {
+    display: flex;
+    column-gap: 32px;
+    row-gap: 56px;
+    flex-wrap: wrap;
+}
+
+.price_cart {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #050505;
+}
+
+.number_cart {
+    background: #F7F6F6;
+    border-radius: 6px;
+    width: 71px;
+    height: 51px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+.button_active {
+    background: $color-text;
+    width: 200px;
+    height: 37px;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #020202;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+
+.button_cline {
+    background: $color-text;
+    width: 200px;
+    height: 37px;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #020202;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 50px;
+}
+
+.border_form {
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+    padding-left: 27px;
+    padding-right: 64px;
+}
+
+.order {
+    border-bottom: 1px solid #CACDD8;
+    width: 288px;
+}
+
+.border_form_price {
+    padding-top: 64px;
+    display: flex;
+    justify-content: center;
+}
+
+.order_price {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+.button_text {
+    width: 290px;
+    height: 41px;
+    background: #F7F6F6;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 28px;
+    transition: all 1s;
+
+    &:hover {
+        background-color: rgb(15, 14, 14);
+        color: white;
+    }
+}
